@@ -1,0 +1,70 @@
+/* Custom CSS for App component */
+.app-container {
+  background-color: #1e293b; /* Dark blue-gray */
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  color: #e2e8f0; /* Light gray text */
+}
+
+.filters-container {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 25px;
+  justify-content: space-between;
+}
+
+.search-input,
+.filter-input {
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: #334155; /* Soft dark blue-gray */
+  border: none;
+  color: #f8fafc; /* White */
+  font-size: 14px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.search-input:focus,
+.filter-input:focus {
+  background-color: #4ade80; /* Light green on focus */
+  color: #1e293b; /* Dark blue-gray for contrast */
+  outline: none;
+}
+
+.todo-items-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.todo-item {
+  background-color: #475569; /* Medium gray-blue */
+  padding: 15px;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+}
+
+.todo-item:hover {
+  transform: scale(1.02); /* Slight zoom on hover */
+}
+
+button {
+  background-color: #22c55e; /* Green button */
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #16a34a; /* Darker green on hover */
+}
+
+button:focus {
+  outline: 2px solid #4ade80; /* Light green outline on focus */
+  outline-offset: 2px;
+}

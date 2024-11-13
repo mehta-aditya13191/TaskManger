@@ -1,0 +1,112 @@
+/* Custom CSS for the TodoItem component */
+.todo-item-container {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  border-radius: 10px;
+  background-color: #3a4750; /* Soft dark blue-gray for item background */
+  margin-bottom: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, background-color 0.3s;
+  flex-wrap: wrap;
+}
+
+.todo-item-container:hover {
+  transform: scale(1.02); /* Subtle hover scale effect */
+  background-color: #4b5861; /* Slightly lighter on hover */
+}
+
+.todo-item-container.completed {
+  background-color: #4ade80; /* Bright green for completed tasks */
+}
+
+.task-checkbox {
+  cursor: pointer;
+  margin-right: 12px;
+}
+
+.task-details {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 8px;
+  width: 100%;
+  color: #e2e8f0; /* Soft white for text */
+}
+
+.task-input,
+.task-textarea,
+.task-date-input,
+.task-priority-input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background-color: #475569; /* Medium blue-gray for input background */
+  color: #f1f5f9;
+  font-size: 15px;
+  box-sizing: border-box;
+  margin-bottom: 12px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.task-input:focus,
+.task-textarea:focus,
+.task-date-input:focus,
+.task-priority-input:focus {
+  background-color: #38bdf8; /* Sky blue on focus */
+  border: 2px solid #2563eb; /* Bright blue border on focus */
+  outline: none;
+}
+
+.task-input.editable,
+.task-textarea.editable {
+  background-color: #1c2a3b;
+}
+
+/* Edit and delete buttons */
+.edit-btn,
+.delete-btn {
+  background-color: #475569; /* Gray background */
+  padding: 10px;
+  border-radius: 10px;
+  color: #f0f4f8;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  margin-top: auto;
+}
+
+.edit-btn:hover {
+  background-color: #3b82f6; /* Blue on hover for edit */
+  color: #fff;
+}
+
+.delete-btn:hover {
+  background-color: #ef4444; /* Red on hover for delete */
+  color: #fff;
+}
+
+/* Styling for textarea to prevent overflow and allow vertical expansion */
+.task-textarea {
+  resize: vertical;
+  max-height: 200px;
+  min-height: 60px;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background-color: #475569;
+  color: #f1f5f9;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.task-textarea:focus {
+  background-color: #38bdf8; /* Sky blue on focus */
+  border: 2px solid #2563eb; /* Bright blue border on focus */
+  outline: none;
+}
+
+.task-textarea.editable {
+  background-color: #1c2a3b;
+}

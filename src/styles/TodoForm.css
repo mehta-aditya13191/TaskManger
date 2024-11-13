@@ -1,0 +1,89 @@
+/* Custom CSS for the TodoForm component */
+.todo-form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 20px;
+  background-color: #323f4b; /* Soft dark blue-gray */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  color: #f0f4f8; /* Light text for readability */
+}
+
+.form-input,
+.description-input,
+.priority-input,
+.add-task-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background-color: #475569; /* Medium blue-gray */
+  color: #f1f5f9; /* White text for contrast */
+  font-size: 15px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.form-input:focus,
+.description-input:focus,
+.priority-input:focus {
+  background-color: #38bdf8; /* Bright sky blue on focus */
+  color: #1e293b; /* Darker color for contrast */
+  outline: none;
+}
+
+.form-input.editable,
+.description-input.editable,
+.priority-input.editable {
+  background-color: #1c2a3b; /* Darker background when editable */
+}
+
+/* Description input (textarea) specific styles */
+.description-input {
+  resize: vertical;
+  min-height: 100px;
+  max-height: 200px;
+}
+
+/* Priority input field styles */
+.priority-input {
+  background-color: #3b4a59; /* Slight contrast for priority */
+  color: #e2e8f0; /* Soft white for visibility */
+}
+
+/* Add task button */
+.add-task-btn {
+  background-color: #4ade80; /* Bright green */
+  color: #1f2937; /* Dark text for legibility */
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.add-task-btn:hover {
+  background-color: #34d399; /* Slightly darker green on hover */
+}
+
+/* Optional: Styling for edit and delete buttons */
+.edit-btn,
+.delete-btn {
+  background-color: #475569;
+  padding: 10px;
+  border-radius: 10px;
+  color: #f0f4f8;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.edit-btn:hover {
+  background-color: #3b82f6; /* Blue on hover for edit */
+}
+
+.delete-btn:hover {
+  background-color: #ef4444; /* Red on hover for delete */
+}
